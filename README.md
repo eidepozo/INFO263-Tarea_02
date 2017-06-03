@@ -15,3 +15,6 @@ Dependiendo del host, para acceder iniciar un buscador (se visualizo la aplicaci
 
 La aplicacion cumple con las funcionalidades solicitadas, despliegue y agregacion.
 Para eliminar o editar, puede acceder como super usuario, con la aplicacion ejecutada y en el buscador "localhost:numerohost/admin", el usuario va adjunto en el correo.
+
+user: tarea_02
+password: 263info263
