@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <title>Asignaturas</title>
+    <link rel="stylesheet" type="text/css" href="{% static "aplicacion/style.css" %}">
+  </head>
+  
+  <body>
+    <a href="{% url 'principal' %}">Inicio<br><br></a>
+    <a href="{% url 'nueva_asignatura' %}">Nueva Asignatura<br><br></a>
+    <h2>Asignaturas</h2>
+    <table style="width:100%">
+      <thead>
+        <th align="left">Id</th>
+        <th align="left">Codigo</th>
+        <th align="left">Nombre</th>
+      </thead>
+      <tbody>
+        {%for asignatura in var%}
+          <tr>
+            <td>{{asignatura.id}}</td><td>{{asignatura.codigo}}</td><td>{{asignatura.nombre}}</td>
+          </tr>
+        {%endfor%}
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <title>Asignaturas</title>
+    <link rel="stylesheet" type="text/css" href="{% static "aplicacion/style.css" %}">
+  </head>
+  
+  <body>
+    <a href="{% url 'principal' %}">Inicio</a><br>
+    <h2>Formulario Nueva Asignatura</h2>
+    {% if form.subject.errors %}
+      <ol>
+        {% for error in form.subject.errors %}
+          <li><strong>{{ error|escape }}</strong></li>
+        {% endfor %}
+      </ol>
+    {% endif %}
+
+    <form method="POST">
+      {% csrf_token %}
+        <label for="codigo">Codigo</label>
+        <input type="text" name="codigo" placeholder="Ej: INFO164">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" placeholder="Ej: Teoria de Automatas">
+        <button>Registrar</button>
+    </form>
+  </body>
+</html>

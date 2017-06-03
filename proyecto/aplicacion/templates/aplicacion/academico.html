@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <title>Academicos</title>
+    <link rel="stylesheet" type="text/css" href="{% static "aplicacion/style.css" %}">
+  </head>
+
+  <body>
+    <a href="{% url 'principal' %}">Inicio</a><br><br>
+    <a href="{% url 'nuevo_academico' %}">Nuevo Academico</a><br><br>
+    <h2>Academicos</h2>
+    <table style="width:100%">
+      <thead>
+        <th align="left">Id</th>
+        <th align="left">Nombre</th>
+        <th align="left">Apellido</th>
+        <th align="left">Rut</th>
+      </thead>
+      <tbody>
+        {%for academico in var%}
+          <tr>
+            <td>{{academico.id}}</td><td>{{academico.nombre}}</td><td>{{academico.apellido}}</td><td>{{academico.rut}}</td>
+          </tr>
+        {%endfor%}
+      </tbody>
+    </table>
+  </body>
+</html>

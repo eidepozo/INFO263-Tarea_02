@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <title>Academicos</title>
+    <link rel="stylesheet" type="text/css" href="{% static "aplicacion/style.css" %}">
+  </head>
+  
+  <body>
+    <a href="{% url 'principal' %}">Inicio</a><br>
+    <h2>Formulario Nuevo Academico</h2>
+    {% if form.subject.errors %}
+      <ol>
+        {% for error in form.subject.errors %}
+          <li><strong>{{ error|escape }}</strong></li>
+        {% endfor %}
+      </ol>
+    {% endif %}
+
+    <form method="POST">
+      {% csrf_token %}
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" placeholder="Ej: Maria">
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" placeholder="Ej: De La Maza">
+        <label for="rut">RUT</label>
+        <input type="text" name="rut" placeholder="Ej: 66653274">
+        <button>Registrar</button>
+    </form>
+  </body>
+</html>

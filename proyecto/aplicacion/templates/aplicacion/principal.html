@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <title>Inicio</title>
+    <link rel="stylesheet" type="text/css" href="{% static "aplicacion/style.css" %}">
+  </head>
+
+  <body>
+    <a href="{% url 'asignatura' %}">Asignaturas</a><br><br>
+    <a href="{% url 'academico' %}">Academicos</a><br><br>
+    <a href="{% url 'carga_familiar' %}">Cargas Familiares</a>
+    <div class=authors> Daniel Berlien<br>Juan Contreras<br>Carlos Schoenfeldt<br>Elliot Ide Pozo
+  </body>
+</html>
