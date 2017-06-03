@@ -8,6 +8,8 @@ Integrantes: Daniel Berlien, Juan Contreras, Carlos Schoenfeldt, Elliot Ide Pozo
 
 Django version 1.8
 
+-------------------------------------------------
+
 Para ejecutar la aplicacion, ubicarse en la primera carpeta proyecto y escribir el comando "python manage.py runserver"
 Dependiendo del host, para acceder iniciar un buscador (se visualizo la aplicacion por firefox) y escribir "localhost:numerohost/principal"
 
