@@ -14,7 +14,4 @@ Para ejecutar la aplicacion, ubicarse en la primera carpeta proyecto y escribir 
 Dependiendo del host, para acceder iniciar un buscador (se visualizo la aplicacion por firefox) y escribir "localhost:numerohost/principal"
 
 La aplicacion cumple con las funcionalidades solicitadas, despliegue y agregacion.
-Para eliminar o editar, puede acceder como super usuario, con la aplicacion ejecutada y en el buscador "localhost:numerohost/admin", el usuario va adjunto en el correo.
-
-user: tarea_02
-password: 263info263
+Para eliminar o editar, puede acceder como super usuario, con la aplicacion ejecutada y en el buscador "localhost:numerohost/admin" (user: tarea_02, password: 263info263)
