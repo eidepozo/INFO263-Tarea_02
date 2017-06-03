@@ -1,7 +1,9 @@
 # INFO263-Tarea_02
 
 Tarea 02 Fundamentos de Ingenieria de Software
+
 Profesor: Raimundo Vega
+
 Integrantes: Daniel Berlien, Juan Contreras, Carlos Schoenfeldt, Elliot Ide Pozo
 
 Django version 1.8
